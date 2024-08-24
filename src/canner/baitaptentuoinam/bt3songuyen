@@ -1,0 +1,24 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package canner.baitaptentuoinam;
+
+import java.util.Scanner;
+
+
+public class bt3songuyen {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Nhập một ký tự: ");
+        if (scanner.hasNextInt()) {
+            int number = scanner.nextInt();
+            System.out.println("Ký tự nhập vào là số nguyên: " + number);
+        } else {
+            System.out.println("Ký tự nhập vào không phải là số nguyên.");
+        }
+
+        scanner.close();
+    }
+}
